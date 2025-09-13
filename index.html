@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>My Queen’s Student Page</title>
+    <link rel="stylesheet" href="style.css"/> <!-- do not change this line -->
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Page</h1> <!-- change this heading to your name -->
+    </header>
+
+    <main>
+      <!-- ====== ABOUT SECTION (edit the text) ====== -->
+      <h2>About Me</h2>
+      <p>I am a student at Queen’s School of Computing. I’m interested in <!-- replace with interests -->.</p>
+
+      <!-- ====== PHOTO (upload me.jpg to repo root, then update the src below) ====== -->
+      <img src="me.jpg" alt="Your Name portrait" width="240" height="240" />
+
+      <!-- ====== PROJECTS/COURSES (add or rename items to courses instead of projects) ====== -->
+      <h2>Projects</h2>
+      <ul>
+        <li>Project One — one sentence description.</li>
+        <li>Project Two — coming soon.</li>
+      </ul>
+
+      <!-- ====== CONTACT (update your links) ====== -->
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:student@queensu.ca">student@queensu.ca</a></p>
+      <p>LinkedIn: <a href="#">add your link here</a></p>
+    </main>
+  </body>
+</html>
+Tips & fixes
+Step 3: Add Queen’s branding (style.css)
+~3 minutes
+
+Explainer: CSS is the language that styles your HTML. It controls colors, fonts, spacing, and layout. By separating style (CSS) from structure (HTML), it’s easier to update the look without touching the content.
+
+Create a file named style.css (at the same level as index.html) and paste:
+
+:root {
+  --red:#aa1e22; --gold:#f2a900; --blue:#002d72;
+}
+body { font-family: system-ui, sans-serif; margin:0; background:var(--red); color:#fff; }
+header { background:var(--blue); color:#fff; padding:1rem; }
+main { background:#fff; color:#1a1a1a; max-width:900px; margin:2rem auto; border-radius:12px; padding:1.5rem; }
+a { color: var(--blue); }
+/* === personalize below by changing colors or spacing === */
+/* example: make headings blue and a bit larger */
+h2 { color: var(--blue); font-size: 1.6rem; }
+/* example: make your photo round */
+img { border-radius: 12px; }
